@@ -192,7 +192,7 @@ export default {
   font-size: 12px;
   position: absolute;
   top: 577px;
-  left: 64px;
+  left: 60px;
 }
 
 /*.caiyang_time {
