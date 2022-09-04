@@ -1,18 +1,18 @@
 <template>
   <div class="up">
-    <div class="name_wrap">
+    <!--div class="name_wrap">
       <div class="name">{{ name }}</div>
       <div class="idNo">{{ idNo }}</div>
-    </div>
+    </div-->
     <div class="time_wrap">
       <div class="time">
         <div class="clock">{{ dateNow }} <a v-html="timeNow"></a></div>
       </div>
       <span class="hesuan_time">{{ hesuan_time }}</span>
-      <div class="caiyang_wrap">
+      <!--div class="caiyang_wrap">
         <span>核酸</span> <span class="caiyang">已采样</span>
         <span class="caiyang_time">{{ caiyang_time }}</span>
-      </div>
+      </div-->
     </div>
   </div>
   <div class="down"></div>
@@ -109,7 +109,7 @@ export default {
       };
     },
   },
-  created() {
+/*  created() {
     if (confirm("是否自动生成姓名，身份证号")) {
       this.name = "**" + this.nameList[Math.floor(Math.random() * 10)];
       this.idNo = "****** ******** " + this.rand(1000, 9999);
@@ -121,7 +121,7 @@ export default {
       }
       this.name = this.xing + name.charAt(name.length - 1);
     }
-  },
+  }, */
   mounted() {
     this.hesuan_time = this.formatDate(new Date(), "yyyy-MM-dd hh:mm");
     this.caiyang_time = this.formatDate(new Date(), "yyyy-MM-dd");
@@ -158,44 +158,44 @@ export default {
 
 .time {
   position: absolute;
-  top: 150px;
+  top: 172px;
   width: 100%;
   text-align: center;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .clock span {
   color: #4d94f3;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   font-family: helvetica Neue !important;
-  margin-left: -4px;
+  margin-left: -6px;
 }
 
-.caiyang_wrap {
+/*.caiyang_wrap {
   position: absolute;
   left: 50%;
-  /* 定位父级的50% */
+
   top: 400px;
   transform: translateX(-50%);
-  /*自己的50% */
+
   display: table;
   min-width: 200px;
   color: #65ba6e;
   text-align: center;
   align-items: center;
-}
+} */
 
 .hesuan_time {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
   font-size: 12px;
   position: absolute;
-  top: 608px;
+  top: 577px;
   left: 64px;
 }
 
-.caiyang_time {
+/*.caiyang_time {
   color: #65ba6e;
   font-size: 16px;
 }
@@ -216,5 +216,5 @@ export default {
 
 .idNo {
   margin-left: 60px;
-}
+} */
 </style>
