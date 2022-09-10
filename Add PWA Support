@@ -5,3 +5,7 @@
 出现这个错误，执行 yarn config set ignore-engines true 命令后重新执行出错的命令即可
 
 重新build后，建立server，浏览器访问，安装好pwa。以后便可以随时直接打开健康码。
+
+pwa下的状态栏颜色使用的是默认颜色#4DBA87，看起来会比较奇怪。
+在dist下的 index.html 和 manifest.json 两个文件中将 theme-color 一项修改为想显示的颜色hex值即可。
+注意浏览器重新加载的时候清除一下cookies
