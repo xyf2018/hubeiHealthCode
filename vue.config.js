@@ -9,10 +9,6 @@ module.exports = defineConfig({
 
   runtimeCompiler: false, // babel-loader默认会跳过`node_modules`依赖. // 通过这个选项可以显示转译一个依赖
 
-  transpileDependencies: [
-    /* string or regex */
-  ], // 是否为生产环境构建生成sourceMap?
-
   productionSourceMap: false, // 调整内部的webpack配置. // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
 
   chainWebpack: () => {},
