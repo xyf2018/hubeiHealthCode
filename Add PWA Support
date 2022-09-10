@@ -1,0 +1,7 @@
+添加pwa支持之后，可以在不开server的情况下直接打开健康码，而且是直接全屏，没有浏览器的导航栏显示，真正做到App级体验。
+总的目标就是，在项目文件夹下执行vue add pwa，然后重新yarn build即可。
+首先执行 yarn global add @vue/cli, 安装vue命令。安装后即可执行vue add pwa。
+命令执行过程中可能会收到提示 The engine "node" is incompatible with this module. 这是由于Nodejs的版本较高不匹配导致的。
+出现这个错误，执行 yarn config set ignore-engines true 命令后重新执行出错的命令即可
+
+重新build后，建立server，浏览器访问，安装好pwa。以后便可以随时直接打开健康码。
