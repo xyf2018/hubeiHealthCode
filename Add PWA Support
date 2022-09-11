@@ -8,5 +8,7 @@
 
 pwa下的状态栏颜色使用的是默认颜色#4DBA87，看起来会比较奇怪。
 在dist下的 index.html 和 manifest.json 两个文件中将 theme-color 一项修改为想显示的颜色hex值即可。
-pwa的图标，默认为vue logo。可将dist/img/icons/ 下android-chrome-maskable-512x512.png文件替换为想使用的图标。
+生成pwa后的splash screen背景色默认是黑色，可以在manifest.json中的background_color 中修改为想显示颜色的hex值。虽然这个splash screen一闪而过
+pwa的图标，默认为vue logo。可将dist/img/icons/ 下 android-chrome-maskable-512x512.png 或 android-chrome-192x192.png 文件替换为想使用的图标。
+也有可能不是这两个文件，具体要哪个文件可以从server的log里查看。
 注意浏览器重新加载的时候清除一下cookies和缓存
