@@ -158,7 +158,7 @@ export default {
 
 .time {
   position: absolute;
-  top: 132px;
+  top: 128px;
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -167,7 +167,7 @@ export default {
 
 .clock span {
   color: #4d94f3;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   font-family: helvetica Neue !important;
   margin-left: -6px;
@@ -191,8 +191,8 @@ export default {
   color: rgba(255, 255, 255, 1);
   font-size: 12px;
   position: absolute;
-  top: 543px;
-  left: 60px;
+  top: 544px;
+  left: 62px;
 }
 
 /*.caiyang_time {
