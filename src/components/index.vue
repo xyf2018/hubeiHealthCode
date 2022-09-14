@@ -15,7 +15,7 @@
       </div-->
     </div>
   </div>
-  <div class="down"></div>
+  <!--div class="down"></div-->
 </template>
 
 <script>
@@ -130,7 +130,7 @@ export default {
       this.dateNow = this.getToday().date;
       this.timeNow = this.getToday().time;
     });
-    document.querySelector('.disclaimer').style.display = 'none';//我用的免费空间有个广告 屏蔽一下
+    //document.querySelector('.disclaimer').style.display = 'none';我用的免费空间有个广告 屏蔽一下
   },
   beforeUnmount() {
     clearInterval(this.clock);
@@ -144,21 +144,21 @@ export default {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  max-height: 644px;
+  /*max-height: 644px;*/
 }
 
-.down {
+/*.down {
   background: url("../assets/bg2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   max-height: 266px;
-}
+} */
 
 .time {
   position: absolute;
-  top: 172px;
+  top: 132px;
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -191,7 +191,7 @@ export default {
   color: rgba(255, 255, 255, 1);
   font-size: 12px;
   position: absolute;
-  top: 577px;
+  top: 543px;
   left: 60px;
 }
 
