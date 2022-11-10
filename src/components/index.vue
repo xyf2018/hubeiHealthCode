@@ -158,7 +158,7 @@ export default {
 
 .time {
   position: absolute;
-  top: 128px;
+  top: 175px;
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -191,7 +191,7 @@ export default {
   color: rgba(255, 255, 255, 1);
   font-size: 12px;
   position: absolute;
-  top: 544px;
+  top: 610px;
   left: 62px;
 }
 
