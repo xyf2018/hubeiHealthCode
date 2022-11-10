@@ -28,5 +28,10 @@ module.exports = defineConfig({
 
   }, // use thread-loader for babel & TS in production build // enabled by default if the machine has more than 1 cores
 
-  pwa: {}, // configure webpack-dev-server behavior
+  pwa: {
+    name: '健康码',
+    manifestOptions: {
+      display: 'fullscreen',
+    },
+  }, // configure webpack-dev-server behavior
 });
