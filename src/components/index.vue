@@ -5,14 +5,14 @@
       <div class="idNo">{{ idNo }}</div>
     </div-->
     <div class="time_wrap">
-      <div class="time">
+      <!--div class="time">
         <div class="clock">{{ dateNow }} <a v-html="timeNow"></a></div>
-      </div>
-      <span class="hesuan_time">{{ hesuan_time }}</span>
-      <!--div class="caiyang_wrap">
-        <span>核酸</span> <span class="caiyang">已采样</span>
-        <span class="caiyang_time">{{ caiyang_time }}</span>
       </div-->
+      <span class="hesuan_time">{{ hesuan_time }}</span>
+      <div class="caiyang_wrap">
+        <!--span>核酸</span> <span class="caiyang">已采样</span-->
+        <span class="caiyang_time">{{ caiyang_time }}</span>
+      </div>
     </div>
   </div>
   <!--div class="down"></div-->
@@ -123,8 +123,8 @@ export default {
     }
   }, */
   mounted() {
-    this.hesuan_time = this.formatDate(new Date(), "yyyy-MM-dd hh:mm");
-    this.caiyang_time = this.formatDate(new Date(), "yyyy-MM-dd");
+    this.hesuan_time = this.formatDate(new Date(), "yyyy-MM-dd");
+    this.caiyang_time = this.formatDate(new Date(), "MM-dd hh:mm:ss");
 
      this.clock = setInterval(() => {
       this.dateNow = this.getToday().date;
@@ -144,7 +144,7 @@ export default {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  /*max-height: 644px;*/
+/*  max-height: 644px; */
 }
 
 /*.down {
@@ -154,7 +154,7 @@ export default {
   height: 100%;
   width: 100%;
   max-height: 266px;
-} */
+}
 
 .time {
   position: absolute;
@@ -171,13 +171,13 @@ export default {
   font-weight: bold;
   font-family: helvetica Neue !important;
   margin-left: -6px;
-}
+} */
 
-/*.caiyang_wrap {
+.caiyang_wrap {
   position: absolute;
   left: 50%;
 
-  top: 400px;
+  top: 215px;
   transform: translateX(-50%);
 
   display: table;
@@ -185,22 +185,22 @@ export default {
   color: #65ba6e;
   text-align: center;
   align-items: center;
-} */
+}
 
 .hesuan_time {
   color: rgba(255, 255, 255, 1);
   font-size: 12px;
   position: absolute;
-  top: 610px;
-  left: 62px;
+  top: 484px;
+  left: 88px;
 }
 
-/*.caiyang_time {
-  color: #65ba6e;
-  font-size: 16px;
+.caiyang_time {
+  color: #3bb359;
+  font-size: 14px;
 }
 
-.caiyang {
+/*.caiyang {
   font-size: 22px;
   padding: 0 8px;
   font-weight: 600;
