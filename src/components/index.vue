@@ -1,9 +1,9 @@
 <template>
   <div class="up">
-    <!--div class="name_wrap">
-      <div class="name">{{ name }}</div>
+    <div class="name_wrap">
+      <!--div class="name">{{ name }}</div-->
       <div class="idNo">{{ idNo }}</div>
-    </div-->
+    </div>
     <div class="time_wrap">
       <!--div class="time">
         <div class="clock">{{ dateNow }} <a v-html="timeNow"></a></div>
@@ -109,19 +109,9 @@ export default {
       };
     },
   },
-/*  created() {
-    if (confirm("是否自动生成姓名，身份证号")) {
-      this.name = "**" + this.nameList[Math.floor(Math.random() * 10)];
-      this.idNo = "****** ******** " + this.rand(1000, 9999);
-    } else {
-      let name = prompt("输入你的姓名", "");
-      this.idNo = "****** ******** " + prompt("输入你的身份证号后4位", "");
-      for (let i = 0; i < name.length - 1; i++) {
-        this.xing += "*";
-      }
-      this.name = this.xing + name.charAt(name.length - 1);
-    }
-  }, */
+  created() {
+    this.idNo = prompt("输入场所信息", "");
+  },
   mounted() {
     this.hesuan_time = this.formatDate(new Date(), "yyyy-MM-dd");
     this.caiyang_time = this.formatDate(new Date(), "MM-dd hh:mm:ss");
@@ -204,17 +194,18 @@ export default {
   font-size: 22px;
   padding: 0 8px;
   font-weight: 600;
-}
+} */
 
 .name_wrap {
   position: absolute;
-  display: flex;
-  color: rgba(255, 255, 255, 0.7);
-  top: 90px;
-  left: 25px;
+  color: rgba(0, 0, 0, 1);
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 350px;
 }
 
 .idNo {
-  margin-left: 60px;
-} */
+  //margin-left: 60px;
+}
 </style>
