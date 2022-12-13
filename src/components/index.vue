@@ -191,7 +191,7 @@ export default {
   color: rgba(255, 255, 255, 1);
   font-size: 12px;
   position: absolute;
-  top: 610px;
+  top: 537px;
   left: 62px;
 }
 
